@@ -1,0 +1,12 @@
+<!-- DTD for Bookstore XML -->
+
+<!ELEMENT bookstore (book+)>
+
+<!ELEMENT book (title, author, genre, price, publish_date)>
+<!ATTLIST book id ID #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT publish_date (#PCDATA)>

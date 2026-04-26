@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+
+<bookstore 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="bookstore.xsd">
+
+    <book id="B001">
+        <title>Effective Java</title>
+        <author>Joshua Bloch</author>
+        <genre>Programming</genre>
+        <price>45.50</price>
+        <publish_date>2018-01-06</publish_date>
+    </book>
+
+    <book id="B002">
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <genre>Programming</genre>
+        <price>40.00</price>
+        <publish_date>2008-08-01</publish_date>
+    </book>
+
+</bookstore>
