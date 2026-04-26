@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Cart</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-5">
+<h2>Your Shopping Cart</h2>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Product</th>
+<th>Price</th>
+</tr>
+</thead>
+
+<tbody id="cartBody">
+</tbody>
+
+</table>
+
+<h4 id="total"></h4>
+
+</div>
+
+<script>
+let product = localStorage.getItem("product");
+let price = localStorage.getItem("price");
+
+if(product && price){
+  document.getElementById("cartBody").innerHTML =
+    "<tr><td>" + product + "</td><td>₹" + price + "</td></tr>";
+
+  document.getElementById("total").innerText = "Total: ₹" + price;
+} else {
+  document.getElementById("cartBody").innerHTML =
+    "<tr><td colspan='2'>Cart is empty</td></tr>";
+}
+</script>
+
+</body>
+</html>
